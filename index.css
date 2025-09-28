@@ -1,0 +1,110 @@
+
+/* VARIABILI COLORI */
+:root{
+    --colore-titoli: black; 
+    --colore-paragrafi: rgb(48, 48, 48);
+    --colore-linee: black;
+    --colore-evidenz: rgb(255, 207, 152);
+    --colore-link: rgb(0, 36, 194);
+    --sfondo: beige;
+}
+
+/* versione darkmode dei colori */
+.darkmode{
+    --colore-titoli: rgb(255, 255, 255); 
+    --colore-paragrafi: rgb(211, 211, 211);
+    --colore-linee: rgb(133, 69, 0);
+    --colore-evidenz: rgb(100, 53, 0);
+    --colore-link: rgb(187, 199, 255);
+    --sfondo: rgb(51, 51, 51);
+}
+
+
+body{
+    background-color: var(--sfondo);
+
+    h1{
+        color: var(--colore-titoli);
+        background-color: var(--colore-evidenz);
+    }
+    h3{
+        color: var(--colore-titoli);
+    }
+    p{
+        color: var(--colore-paragrafi);
+    }
+    hr{
+        color: var(--colore-linee);
+    }
+    label{
+        color: var(--colore-paragrafi);
+    }
+    a{
+        color: var(--colore-link);
+    }
+}
+
+/* PULSANTE DARK MODE */
+#themeSwitch{
+    img{
+        height: 40px;
+        width: 40px;
+    }
+
+    height: 50px;
+    width: 50px;
+    padding: 0;
+
+    border-radius: 50%;
+    background-color: var(--colore-evidenz);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+#themeSwitch png:last-child{
+    display: none;
+}
+.darkmode #themeSwitch png:first-child{
+    display: none;
+}
+.darkmode #themeSwitch png:last-child{
+    display: block;
+}
+
+/* FOTO */
+#fotoIniziale{
+    height: 100px;
+    float: right;
+}
+img{
+    height: 200px;
+}
+#bici{
+    float: left;
+    padding-right: 10px;
+}
+#sci{
+    float: right;
+    padding-left: 10px;
+}
+
+/* TESTO */
+header{
+    text-align: center;
+    a{
+        padding-right: 50px;
+    }
+}
+
+
+
+
+
+#bottomHr{
+    clear: both;
+}
