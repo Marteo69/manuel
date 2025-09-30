@@ -26,6 +26,7 @@ body{
     h1{
         color: var(--colore-titoli);
         background-color: var(--colore-evidenz);
+        font-weight: 1000;
     }
     h3{
         color: var(--colore-titoli);
